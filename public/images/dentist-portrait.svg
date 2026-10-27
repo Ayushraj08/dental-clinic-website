@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="portraitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8F6F0" />
+      <stop offset="50%" stop-color="#ECE7DC" />
+      <stop offset="100%" stop-color="#DCD5C5" />
+    </linearGradient>
+    <linearGradient id="scrubsForest" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E5C48" />
+      <stop offset="60%" stop-color="#174A3A" />
+      <stop offset="100%" stop-color="#0E3025" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#443224" />
+      <stop offset="70%" stop-color="#302217" />
+      <stop offset="100%" stop-color="#1E150E" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDF1E8" />
+      <stop offset="70%" stop-color="#F4DEC9" />
+      <stop offset="100%" stop-color="#E5C7AD" />
+    </linearGradient>
+    <filter id="portraitShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#174A3A" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="800" fill="url(#portraitBg)" />
+  
+  <!-- Architectural soft clinic wall texture -->
+  <rect x="360" y="80" width="180" height="340" rx="4" fill="#E2DDD0" fill-opacity="0.55" />
+  <line x1="360" y1="220" x2="540" y2="220" stroke="#D3CDC0" stroke-width="2" />
+  <ellipse cx="90" cy="240" rx="190" ry="300" fill="#FFFFFF" fill-opacity="0.35" />
+
+  <!-- Shoulders & Clinical Scrubs Coat -->
+  <g filter="url(#portraitShadow)">
+    <path
+      d="M 70 800 C 90 620 160 530 240 500 L 300 550 L 360 500 C 440 530 510 620 530 800 Z"
+      fill="url(#scrubsForest)"
+      stroke="#0B261D"
+      stroke-width="2"
+    />
+
+    <!-- Tailored Lapel and Medical Coat V-Neck -->
+    <path d="M 240 500 L 300 610 L 360 500 L 335 485 L 300 550 L 265 485 Z" fill="#134133" />
+    <!-- Crisp Inner White Underscrub -->
+    <path d="M 265 485 L 300 550 L 335 485 L 320 460 L 300 465 L 280 460 Z" fill="#FFFFFF" stroke="#E6E2D8" stroke-width="1.5" />
+
+    <!-- Neck -->
+    <path d="M 275 425 L 275 485 Q 300 500 325 485 L 325 425 Z" fill="url(#skinGrad)" />
+    <ellipse cx="300" cy="435" rx="32" ry="8" fill="#D3B196" fill-opacity="0.5" />
+
+    <!-- Head & Hair Silhouette -->
+    <path
+      d="M 205 320 C 190 200 225 125 300 125 C 375 125 410 200 395 320 C 385 375 370 440 360 460 C 340 468 315 465 300 465 C 285 465 260 468 240 460 C 230 440 215 375 205 320 Z"
+      fill="url(#hairGrad)"
+    />
+
+    <!-- Face Oval -->
+    <path
+      d="M 235 270 C 235 190 268 175 300 175 C 332 175 365 190 365 270 C 365 355 340 425 300 425 C 260 425 235 355 235 270 Z"
+      fill="url(#skinGrad)"
+    />
+
+    <!-- Styled Waves -->
+    <path
+      d="M 235 230 C 240 180 280 160 306 162 C 346 165 380 195 372 255 C 365 230 340 195 300 195 C 260 195 242 215 235 230 Z"
+      fill="url(#hairGrad)"
+    />
+    <path d="M 235 230 C 225 270 222 330 228 375 C 233 335 236 280 242 250 Z" fill="#302217" />
+
+    <!-- Eyebrows -->
+    <path d="M 256 260 Q 275 253 288 260" stroke="#3D2B1E" stroke-width="3" stroke-linecap="round" fill="none" />
+    <path d="M 312 260 Q 325 253 344 260" stroke="#3D2B1E" stroke-width="3" stroke-linecap="round" fill="none" />
+
+    <!-- Eyes with warmth -->
+    <path d="M 258 276 Q 272 270 286 276" stroke="#302217" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <circle cx="272" cy="280" r="4" fill="#201710" />
+    <circle cx="270.5" cy="278.5" r="1.2" fill="#FFFFFF" />
+
+    <path d="M 314 276 Q 328 270 342 276" stroke="#302217" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <circle cx="328" cy="280" r="4" fill="#201710" />
+    <circle cx="326.5" cy="278.5" r="1.2" fill="#FFFFFF" />
+
+    <!-- Nose -->
+    <path d="M 300 270 L 298 316 Q 300 324 305 321" stroke="#C9A68A" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    <path d="M 293 322 Q 300 326 307 322" stroke="#BA9579" stroke-width="2" stroke-linecap="round" fill="none" />
+
+    <!-- Authentic Warm Smile -->
+    <path d="M 276 352 Q 300 375 324 352" stroke="#A85750" stroke-width="2.5" stroke-linecap="round" fill="none" />
+    <path d="M 280 354 Q 300 370 320 354" fill="#FFFFFF" />
+    <path d="M 275 352 C 272 350 271 354 274 356" stroke="#D3A28B" stroke-width="2" stroke-linecap="round" />
+    <path d="M 325 352 C 328 350 329 354 326 356" stroke="#D3A28B" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Stethoscope / Clinical Loupes Detail -->
+    <path d="M 260 580 Q 300 650 340 580" stroke="#7A8780" stroke-width="3.5" stroke-linecap="round" fill="none" />
+    <circle cx="300" cy="640" r="12" fill="#9EABA3" stroke="#687770" stroke-width="2.5" />
+    <circle cx="300" cy="640" r="5" fill="#3D4A43" />
+  </g>
+
+  <!-- Editorial Credential Placard -->
+  <g transform="translate(60, 715)">
+    <rect width="480" height="54" rx="6" fill="#FFFFFF" fill-opacity="0.96" stroke="#E6E2D8" stroke-width="1.5" />
+    <text x="24" y="27" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="700" fill="#174A3A" letter-spacing="0.04em">
+      DR. ELEANOR VANCE · PRINCIPAL SURGEON
+    </text>
+    <text x="24" y="43" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="11" font-weight="500" fill="#5E655F">
+      BDS (Hons) King's College London · MSc Restorative Dentistry · 14 Yrs Experience
+    </text>
+  </g>
+</svg>

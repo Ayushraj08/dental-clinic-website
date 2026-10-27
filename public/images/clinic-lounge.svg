@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="loungeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F8F3" />
+      <stop offset="60%" stop-color="#EFECE3" />
+      <stop offset="100%" stop-color="#E3DDD0" />
+    </linearGradient>
+    <linearGradient id="travertineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2EDE3" />
+      <stop offset="50%" stop-color="#E5DEC0" />
+      <stop offset="100%" stop-color="#D5CAA8" />
+    </linearGradient>
+    <linearGradient id="linenArmchair" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF8F2" />
+      <stop offset="100%" stop-color="#EBE6DA" />
+    </linearGradient>
+    <filter id="softDepth" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#222522" flood-opacity="0.07" />
+    </filter>
+  </defs>
+
+  <!-- Wall & Flooring -->
+  <rect width="1200" height="675" fill="url(#loungeBg)" />
+  <rect y="510" width="1200" height="165" fill="#DFD8CA" />
+  <line x1="0" y1="510" x2="1200" y2="510" stroke="#CBC3B2" stroke-width="2" />
+
+  <!-- Architectural Wall Niche (Arch) -->
+  <rect x="120" y="70" width="420" height="370" rx="210" fill="#E8E3D7" stroke="#D5CEC0" stroke-width="2" />
+  
+  <!-- Warm Minimalist Brass Pendant Light into Niche -->
+  <line x1="330" y1="0" x2="330" y2="160" stroke="#8E8574" stroke-width="2" />
+  <ellipse cx="330" cy="175" rx="45" ry="16" fill="#EFE8D8" stroke="#A89E8A" stroke-width="2" />
+  <circle cx="330" cy="185" r="8" fill="#FDF7EA" />
+  <circle cx="330" cy="195" r="70" fill="#FFFCEF" fill-opacity="0.35" />
+
+  <!-- Travertine Display Plinth inside Niche -->
+  <rect x="225" y="340" width="210" height="70" rx="3" fill="url(#travertineGrad)" stroke="#C6BCA9" stroke-width="1.5" />
+  <!-- Ceramic Sculptural Vessel -->
+  <ellipse cx="330" cy="340" rx="26" ry="9" fill="#D6CDC0" />
+  <path d="M 310 340 C 310 290 320 255 330 255 C 340 255 350 290 350 340 Z" fill="#FBF9F4" stroke="#CEC6B5" stroke-width="1.5" />
+  <path d="M 330 255 L 330 215 Q 338 200 345 195" stroke="#174A3A" stroke-width="2" stroke-linecap="round" />
+  <circle cx="345" cy="195" r="4.5" fill="#174A3A" />
+
+  <!-- Boutique Reception Desk (Right) -->
+  <g filter="url(#softDepth)">
+    <rect x="700" y="300" width="440" height="210" rx="6" fill="#E3DCBE" stroke="#CCC2A8" stroke-width="2" />
+    <!-- Fluted timber slats on reception counter -->
+    {Array.from({ length: 26 }).map((_, i) => (
+      <line key={i} x1={720 + i * 16} y1="330" x2={720 + i * 16} y2="510" stroke="#D4CBB3" stroke-width="2" />
+    ))}
+    <!-- Travertine Countertop Slab -->
+    <path d="M 675 300 L 1165 300 L 1150 325 L 690 325 Z" fill="url(#travertineGrad)" stroke="#B8AC94" stroke-width="2" />
+  </g>
+
+  <!-- Linen Armchair in Waiting Lounge (Left Foreground) -->
+  <g filter="url(#softDepth)" transform="translate(180, 410)">
+    <ellipse cx="180" cy="130" rx="115" ry="22" fill="#C2BBAE" />
+    <!-- Legs -->
+    <line x1="90" y1="110" x2="102" y2="150" stroke="#5E584D" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="260" y1="110" x2="248" y2="150" stroke="#5E584D" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="120" y1="110" x2="120" y2="150" stroke="#5E584D" stroke-width="4.5" stroke-linecap="round" />
+    <line x1="230" y1="110" x2="230" y2="150" stroke="#5E584D" stroke-width="4.5" stroke-linecap="round" />
+    <!-- Seat Cushion -->
+    <rect x="80" y="70" width="190" height="46" rx="12" fill="url(#linenArmchair)" stroke="#D8D0C2" stroke-width="2" />
+    <!-- Curved Backrest -->
+    <path d="M 85 75 Q 175 25 265 75 Q 260 -15 175 -15 Q 90 -15 85 75 Z" fill="#F8F6F0" stroke="#D8D0C2" stroke-width="2" />
+  </g>
+
+  <!-- Low Travertine Table & Curated Monograph -->
+  <g filter="url(#softDepth)" transform="translate(560, 500)">
+    <ellipse cx="90" cy="80" rx="110" ry="25" fill="#BFB8AA" />
+    <path d="M 10 60 Q 90 32 170 60 Q 170 76 162 82 Q 90 56 10 82 Z" fill="url(#travertineGrad)" stroke="#C4BAA5" stroke-width="2" />
+    <rect x="60" y="70" width="60" height="40" rx="3" fill="#887F6F" />
+    <rect x="68" y="52" width="45" height="30" rx="2" transform="rotate(-6 68 52)" fill="#FFFFFF" stroke="#D3CDC0" stroke-width="1.5" />
+    <line x1="88" y1="52" x2="88" y2="82" stroke="#E2DCD0" stroke-width="1.5" />
+  </g>
+
+  <!-- Editorial Info Banner -->
+  <g transform="translate(740, 580)">
+    <rect width="380" height="46" rx="6" fill="#FFFFFF" fill-opacity="0.95" stroke="#E5E0D5" stroke-width="1.5" />
+    <circle cx="26" cy="23" r="5" fill="#174A3A" />
+    <text x="46" y="28" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="700" fill="#174A3A" letter-spacing="0.04em">
+      AIR-FILTERED PATIENT RELAXATION LOUNGE
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ivory: #F8F7F2;
+    --color-forest: #174A3A;
+    --color-forest-hover: #123B2E;
+    --color-forest-light: #E8EFEA;
+    --color-charcoal: #222522;
+    --color-muted: #5E655F;
+    --color-border: #E6E4DC;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--color-ivory);
+    color: var(--color-charcoal);
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+}
+
+.font-serif-editorial {
+  font-family: 'Cormorant Garamond', Garamond, 'Times New Roman', Georgia, serif;
+}
+
+/* Custom subtle scrollbar that blends invisibly without distracting bars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D9D6CC;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8B4A6;
+}

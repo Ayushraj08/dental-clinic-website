@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tCleanBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6F9F7" />
+      <stop offset="100%" stop-color="#E1ECE5" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#tCleanBg)" />
+  <circle cx="400" cy="240" r="160" fill="#D3E4DB" fill-opacity="0.5" />
+  <circle cx="400" cy="240" r="120" fill="#FFFFFF" stroke="#C5DCD0" stroke-width="2" />
+  
+  <!-- Guided Biofilm Sparkle & Water droplet -->
+  <g transform="translate(340, 160) scale(2.5)">
+    <path d="M 24 5 L 27 13 L 35 16 L 27 19 L 24 27 L 21 19 L 13 16 L 21 13 Z" fill="#174A3A" />
+    <path d="M 36 28 L 37.6 32.4 L 42 34 L 37.6 35.6 L 36 40 L 34.4 35.6 L 30 34 L 34.4 32.4 Z" fill="#256F57" />
+    <path d="M 12 30 L 13.2 33.3 L 16.5 34.5 L 13.2 35.7 L 12 39 L 10.8 35.7 L 7.5 34.5 L 10.8 33.3 Z" fill="#256F57" />
+  </g>
+
+  <rect x="200" y="420" width="400" height="42" rx="6" fill="#FFFFFF" stroke="#D3E4DB" stroke-width="1.5" />
+  <text x="400" y="446" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="700" fill="#174A3A" letter-spacing="0.05em">
+    TEETH CLEANING & GUIDED HYGIENE
+  </text>
+</svg>

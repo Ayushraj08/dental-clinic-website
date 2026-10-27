@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F5EE" />
+      <stop offset="60%" stop-color="#EBE7DC" />
+      <stop offset="100%" stop-color="#DDD8CB" />
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2DDD0" />
+      <stop offset="100%" stop-color="#D0C9B9" />
+    </linearGradient>
+    <linearGradient id="windowLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.65" />
+      <stop offset="70%" stop-color="#FFFFFF" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="windowSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EEF5F0" />
+      <stop offset="100%" stop-color="#D9E7DC" />
+    </linearGradient>
+    <linearGradient id="leatherChair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#F4F1EA" />
+      <stop offset="100%" stop-color="#DDD7C8" />
+    </linearGradient>
+    <linearGradient id="cabinetOak" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E3DACB" />
+      <stop offset="100%" stop-color="#CBBFA9" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#222522" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Wall and Floor -->
+  <rect width="1200" height="675" fill="url(#bgGrad)" />
+  <polygon points="0,520 1200,520 1200,675 0,675" fill="url(#floorGrad)" />
+  <line x1="0" y1="520" x2="1200" y2="520" stroke="#C4BCA8" stroke-width="2" />
+  
+  <!-- Subtle wood plank lines -->
+  <line x1="180" y1="520" x2="60" y2="675" stroke="#C8C0AF" stroke-width="1.5" stroke-dasharray="4,4" />
+  <line x1="480" y1="520" x2="390" y2="675" stroke="#C8C0AF" stroke-width="1.5" stroke-dasharray="4,4" />
+  <line x1="820" y1="520" x2="760" y2="675" stroke="#C8C0AF" stroke-width="1.5" stroke-dasharray="4,4" />
+  <line x1="1080" y1="520" x2="1040" y2="675" stroke="#C8C0AF" stroke-width="1.5" stroke-dasharray="4,4" />
+
+  <!-- Large Architectural Window (Left) -->
+  <rect x="70" y="40" width="340" height="450" rx="4" fill="url(#windowSky)" stroke="#C8C1B2" stroke-width="3" />
+  <!-- Subtle Outside Garden Greenery -->
+  <path d="M 70 420 Q 140 330 220 370 Q 300 320 360 380 Q 390 350 410 400 L 410 490 L 70 490 Z" fill="#9FBEA7" fill-opacity="0.45" />
+  <path d="M 110 460 Q 180 370 260 410 Q 340 380 410 440 L 410 490 L 110 490 Z" fill="#7FA98A" fill-opacity="0.35" />
+  <!-- Window mullions -->
+  <line x1="240" y1="40" x2="240" y2="490" stroke="#C8C1B2" stroke-width="3" />
+  <line x1="70" y1="190" x2="410" y2="190" stroke="#C8C1B2" stroke-width="3" />
+  <line x1="70" y1="340" x2="410" y2="340" stroke="#C8C1B2" stroke-width="3" />
+
+  <!-- Natural Sunbeam Diffusion -->
+  <polygon points="70,40 410,40 1080,675 480,675" fill="url(#windowLight)" />
+
+  <!-- Minimalist Oak Cabinetry (Right) -->
+  <rect x="920" y="310" width="280" height="210" rx="4" fill="url(#cabinetOak)" stroke="#B7A890" stroke-width="2" filter="url(#softShadow)" />
+  <line x1="920" y1="415" x2="1200" y2="415" stroke="#B7A890" stroke-width="1.5" />
+  <line x1="1060" y1="310" x2="1060" y2="520" stroke="#B7A890" stroke-width="1.5" />
+  <line x1="1035" y1="355" x2="1035" y2="375" stroke="#7E725F" stroke-width="2.5" stroke-linecap="round" />
+  <line x1="1085" y1="355" x2="1085" y2="375" stroke="#7E725F" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Ceramic Botanical Vase on Counter -->
+  <ellipse cx="1000" cy="310" rx="18" ry="6" fill="#BDB4A5" />
+  <path d="M 985 310 L 988 245 Q 1000 240 1012 245 L 1015 310 Z" fill="#F8F6F0" stroke="#C5BEB0" stroke-width="1.5" />
+  <path d="M 1000 245 Q 995 180 980 145" stroke="#174A3A" stroke-width="2" stroke-linecap="round" />
+  <path d="M 1000 245 Q 1015 190 1025 155" stroke="#174A3A" stroke-width="2" stroke-linecap="round" />
+  <ellipse cx="977" cy="160" rx="8" ry="4" transform="rotate(-30 977 160)" fill="#174A3A" />
+  <ellipse cx="990" cy="190" rx="9" ry="4.5" transform="rotate(25 990 190)" fill="#1F614C" />
+  <ellipse cx="1022" cy="170" rx="8" ry="4" transform="rotate(35 1022 170)" fill="#174A3A" />
+
+  <!-- Potted Fiddle Leaf Plant beside window -->
+  <ellipse cx="440" cy="545" rx="36" ry="11" fill="#B3ABA0" />
+  <path d="M 415 545 L 423 455 L 457 455 L 465 545 Z" fill="#E2DCD1" stroke="#C5BEAF" stroke-width="2" />
+  <path d="M 440 455 Q 440 345 420 260" stroke="#174A3A" stroke-width="3" stroke-linecap="round" />
+  <path d="M 440 455 Q 455 360 475 290" stroke="#174A3A" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M 420 260 C 390 245 375 275 390 310 C 405 330 428 300 420 260 Z" fill="#174A3A" />
+  <path d="M 435 315 C 470 285 485 315 470 350 C 455 370 435 345 435 315 Z" fill="#1E5C49" />
+  <path d="M 425 375 C 395 355 380 385 400 415 C 415 430 435 405 425 375 Z" fill="#174A3A" />
+  <path d="M 470 300 C 498 280 512 308 502 338 C 492 358 470 338 470 300 Z" fill="#256F57" />
+
+  <!-- Ergonomic Dental Treatment Chair -->
+  <g filter="url(#softShadow)">
+    <ellipse cx="690" cy="570" rx="90" ry="16" fill="#3D4540" />
+    <rect x="670" y="475" width="40" height="95" rx="5" fill="#69756F" />
+    <rect x="680" y="445" width="20" height="40" fill="#8A9790" />
+
+    <!-- Chair cushions -->
+    <path d="M 590 430 Q 675 415 745 430 Q 770 450 755 465 Q 685 480 590 465 Z" fill="url(#leatherChair)" stroke="#CCC5B3" stroke-width="2" />
+    <path d="M 595 432 Q 510 375 470 335 Q 450 315 465 300 Q 490 295 525 330 Q 570 375 615 422 Z" fill="url(#leatherChair)" stroke="#CCC5B3" stroke-width="2" />
+    <rect x="430" y="270" width="55" height="34" rx="14" transform="rotate(-30 430 270)" fill="url(#leatherChair)" stroke="#CCC5B3" stroke-width="2" />
+    <path d="M 745 430 Q 825 450 855 480 Q 850 495 815 495 Q 775 475 745 460 Z" fill="url(#leatherChair)" stroke="#CCC5B3" stroke-width="2" />
+    <path d="M 575 375 C 630 390 660 390 705 375 C 712 375 712 386 705 392 C 655 406 625 406 568 390 Z" fill="#E2DCD0" stroke="#CCC5B3" stroke-width="1.5" />
+  </g>
+
+  <!-- Modern Ring LED Dental Lamp Overhead -->
+  <path d="M 690 445 Q 635 335 660 170 Q 675 85 715 40" stroke="#9EA9A3" stroke-width="5" stroke-linecap="round" fill="none" />
+  <ellipse cx="645" cy="195" rx="34" ry="14" transform="rotate(25 645 195)" fill="#EDEAE0" stroke="#87948D" stroke-width="2.5" />
+  <ellipse cx="645" cy="195" rx="26" ry="9" transform="rotate(25 645 195)" fill="#FFFFFF" fill-opacity="0.9" />
+  <ellipse cx="645" cy="215" rx="50" ry="30" fill="#FFFDF8" fill-opacity="0.25" />
+
+  <!-- Editorial Badge Tag -->
+  <g transform="translate(60, 590)">
+    <rect width="280" height="44" rx="6" fill="#FFFFFF" fill-opacity="0.95" stroke="#E6E2D8" stroke-width="1.5" />
+    <circle cx="24" cy="22" r="5" fill="#174A3A" />
+    <text x="42" y="27" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="700" fill="#174A3A" letter-spacing="0.04em">
+      AURA PRIVATE OPERATORY SUITE
+    </text>
+  </g>
+</svg>

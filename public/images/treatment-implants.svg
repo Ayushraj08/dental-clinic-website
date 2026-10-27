@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tImpBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF9F4" />
+      <stop offset="100%" stop-color="#EAE5D9" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#tImpBg)" />
+  <circle cx="400" cy="240" r="160" fill="#E4DDCF" fill-opacity="0.5" />
+  <circle cx="400" cy="240" r="120" fill="#FFFFFF" stroke="#D8D0C0" stroke-width="2" />
+  
+  <g transform="translate(340, 160) scale(2.5)">
+    <!-- Crown -->
+    <path d="M 16 4 H 32 V 14 C 32 17 29 20 24 20 C 19 20 16 17 16 14 V 4 Z" fill="#F8F6F0" stroke="#174A3A" stroke-width="2" />
+    <!-- Implant Threading Screw -->
+    <line x1="18" y1="24" x2="30" y2="24" stroke="#174A3A" stroke-width="2" />
+    <line x1="19" y1="30" x2="29" y2="30" stroke="#174A3A" stroke-width="2" />
+    <line x1="20" y1="36" x2="28" y2="36" stroke="#174A3A" stroke-width="2" />
+    <path d="M 24 20 V 44" stroke="#174A3A" stroke-width="2" />
+  </g>
+
+  <rect x="220" y="420" width="360" height="42" rx="6" fill="#FFFFFF" stroke="#E6E2D8" stroke-width="1.5" />
+  <text x="400" y="446" text-anchor="middle" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="700" fill="#174A3A" letter-spacing="0.05em">
+    DENTAL IMPLANTS & RESTORATION
+  </text>
+</svg>

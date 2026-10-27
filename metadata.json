@@ -1,0 +1,6 @@
+{
+  "name": "Aura Dental Studio",
+  "description": "Premium, calm, and responsive dental clinic website template crafted for patient trust, treatment discovery, and seamless appointment booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
